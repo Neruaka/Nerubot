@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 
 const { Player } = require('discord-player');
 const { Client, Intents } = require('discord.js'); //load discordjs library
@@ -31,4 +31,4 @@ require('./events');
 
 
 
-client.login('OTEyMDY4OTUyMDk4NzYyNzUz.YZqkZw.XiylJYjfAEHJJh0OaTUZCCKHf8g');
+client.login(process.env.BOT_TOKEN);

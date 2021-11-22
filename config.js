@@ -1,7 +1,7 @@
 module.exports = {
     app: {
         px: '*',
-        token: 'OTEyMDY4OTUyMDk4NzYyNzUz.YZqkZw.XiylJYjfAEHJJh0OaTUZCCKHf8g',
+        token: '',
         playing: 'Neruaka me code la'
         
     },
