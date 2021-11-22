@@ -2,11 +2,6 @@ require('dotenv').config();
 
 const { Player } = require('discord-player');
 const { Client, Intents } = require('discord.js'); //load discordjs library
-const jointocreate = require("../events/jointocreate"); //load the jointocreate.js file
-
-
-
-
 
 
 global.client = new Client({
@@ -24,11 +19,8 @@ client.config = require('../config');
 global.player = new Player(client, client.config.opt.discordPlayer);
 
 
-jointocreate(client);                           //call the jointocreate file
 require('./loader');
 require('./events');
-
-
 
 
 client.login(process.env.BOT_TOKEN);
